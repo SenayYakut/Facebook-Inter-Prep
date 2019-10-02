@@ -70,5 +70,5 @@ boolean hasCycle(Node head){
     }
     return false;
 }
- console.log(hasCycle([1,2,3,4,5]));       
+     
        
