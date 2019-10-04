@@ -29,3 +29,39 @@ get(key){
         }
     }
 }
+//another example
+class myHashTable{
+    constructor(){
+        this.data=new Array(50);
+    }
+
+    set(key, value){
+        const index=this.hash(key);
+        this.data[index]=[];
+        this.data.push(key, value);
+        
+    }
+
+    get(key){
+        const index=this.hash(key);
+        return this.data[index][1];
+    }
+
+    hash(key){
+        let hash=0;
+        for(let i=0; i<key.lenght; i++){
+            hash=(hash+key.charCodeAt(i)*i)%this.data.lenght;
+        }
+        return hash;
+    }
+}
+
+const hashObject=new myHashTable();
+hashObject.set("ap","apples");
+hashObject.set("ba","bananas");
+hashObject.set("ch","cherry");
+
+console.log(hasObject);
+console.log(hasObject.get("b"));
+
+
