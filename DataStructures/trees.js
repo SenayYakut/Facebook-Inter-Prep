@@ -13,3 +13,7 @@ function sumTheTreeValues(root){
   } 
   console.log(sumTreeValues([1,2,3,4,5,6]));
   //lets try binary search trees
+
+
+//Construct a complete binary tree from given array
+var arr =[5,7,1,15,9,2,14,8,7,3];
